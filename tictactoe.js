@@ -51,13 +51,15 @@ function checkWin() {
   });
 }
 
+// Show the modal
 function showWinnerPopup(winner) {
   modalMessage.innerText = winner === "No one" ? "It's a Draw!" : `Player ${winner} Wins!`;
-  winnerModal.style.display = 'flex'; // Show the modal
+  winnerModal.style.display = 'flex'; 
 }
 
+// Hide the modal
 function closeWinnerPopup() {
-  winnerModal.style.display = 'none'; // Hide the modal
+  winnerModal.style.display = 'none'; 
 }
 
 function restartGame() {
